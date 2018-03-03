@@ -4,4 +4,4 @@
 
  define('DEFAULT_ROUTE','home/index');
 
- define('BASE_URL','http://r2soft.com.ng/hooks/');
+ define('BASE_URL','');
