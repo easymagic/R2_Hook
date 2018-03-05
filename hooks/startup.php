@@ -262,6 +262,10 @@ function listeners($tag,$cb=''){
    return session('__history__',$v);
  }
 
+ function save_history(){
+  history(env('__history__'));
+ }
+
  function log_error($msg){
    response('message',$msg);
    response('error','1');
