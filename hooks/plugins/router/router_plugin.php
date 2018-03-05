@@ -5,7 +5,7 @@
    // return __action('');
    $args = explode('/', $args);
    $package = 'home';
-   $action = 'home_index';
+   $action = 'index';
    
    if (count($args) > 0){
      
@@ -19,7 +19,7 @@
 
    }
 
-   $file = "web_modules/$package/" . $package . '_' . $action . '.php';
+   $file = "web_modules/$package/" . $package . '_module.php';
    if (file_exists($file)){
     require_once($file);
    }
