@@ -173,7 +173,7 @@ function listeners($tag,$cb=''){
  }
 
 
- function request($k,$v=''){
+ function request($k='',$v=''){
    
    static $resp;
 
@@ -270,6 +270,11 @@ function listeners($tag,$cb=''){
  function log_success($msg){
    response('message',$msg);
    response('error','0');
+ }
+
+ function redirect($route){
+  header('location:' . BASE_URL . $route);
+  exit();
  }
  
 
