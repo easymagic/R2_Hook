@@ -24,7 +24,7 @@
     require_once($file);
    }
 
-   $args = array_merge(array($package . '_' . $action),$args);
+   $args = array_merge(array('nav_' . $package . '_' . $action),$args);
 
    return call_user_func_array('__action', $args);
 
